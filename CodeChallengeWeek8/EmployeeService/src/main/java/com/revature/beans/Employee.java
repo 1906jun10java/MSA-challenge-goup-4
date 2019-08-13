@@ -14,11 +14,9 @@ public class Employee {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO, generator="employeeSequence")
-	@SequenceGenerator(allocationSize=1, name="employeeSequence", sequenceName="SQ_EMPID_PK")
-	@Column(name="EMP_ID")
 	private int id;
-	@Column(name="USERNAME")
 	private String username;
+	
 	public Employee() {
 		super();
 		// TODO Auto-generated constructor stub

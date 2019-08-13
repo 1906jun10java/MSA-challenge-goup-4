@@ -1,0 +1,20 @@
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    
+    
+zuul:
+  routes:
+    gary:
+      path: /flashcard/*
+      service-id: flashcard-service
+      strip-prefix: false
+    gwen:
+      path: /api/*
+      service-id: conservative
+      strip-prefix: false
+    animal:
+      path: /sounds/*
+      service-id: animalSoundsgoHolla
+      strip-prefix: false

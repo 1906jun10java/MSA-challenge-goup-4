@@ -8,8 +8,8 @@ import org.springframework.stereotype.Repository;
 import com.revature.beans.Employee;
 
 @Repository
-public interface EmployeeRepository extends JpaRepository{
+public interface EmployeeRepository extends JpaRepository<Employee,Integer>{
 
 	
-	public List<Employee> getAllEmployees();
+	
 }

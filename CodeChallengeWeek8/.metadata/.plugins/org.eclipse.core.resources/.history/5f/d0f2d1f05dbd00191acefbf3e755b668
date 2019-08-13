@@ -1,0 +1,10 @@
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true  
+zuul:
+  routes:
+    EmployeeService:
+      path: /employee/*
+      service-id: EmployeeService
+      strip-prefix: false
